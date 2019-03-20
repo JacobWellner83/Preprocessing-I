@@ -217,6 +217,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration-color: aqua;
   width: 38%;
 }
 @media (max-width: 500px) {
@@ -229,6 +230,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration-style: dotted;
   width: 38%;
 }
 @media (max-width: 500px) {
