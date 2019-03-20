@@ -134,21 +134,65 @@ table {
 html {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
   height: 100%;
   line-height: 1.2rem;
+  background-color: #2d5dc4;
 }
-html m body {
+html body {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  height: 80%;
-  line-height: inherit;
+  justify-content: baseline;
+  align-items: baseline;
+  width: 80%;
+  line-height: 1.5rem;
 }
-html m body li {
+html body div {
+  margin: 1%;
+  border: 1px solid darkgrey;
+  background-color: lightgrey;
+  padding: 0.25rem;
+}
+html body ul {
+  list-style: square;
+}
+html body li {
   list-style-position: inside;
 }
-header {
+html body h2 {
+  border-bottom: 1px solid black;
+}
+html body .employment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+}
+html body .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+}
+html body .education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+}
+html body .interests {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+}
+html header {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -159,57 +203,35 @@ header {
   border: 1px darkgrey;
   background-color: lightgray;
 }
-header img {
+html header img {
   width: 30%;
   height: auto;
   margin: 1rem;
 }
-header h1 {
+html header h1 {
   margin-bottom: 1.2rem;
-}
-header p {
-  font: inherit;
-  font-size: 1rem;
-}
-h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 28pt;
 }
-.employment {
+html header p {
+  font: inherit;
+  font-size: 1rem;
+}
+html header div {
+  border: none;
+}
+html footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  border: 1px solid red;
+  justify-content: flex-start;
+  margin-right: 20%;
+  margin-top: 2rem;
+  text-align: center;
 }
-.skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  border: 1px solid red;
-}
-.education {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  border: 1px solid red;
-}
-.interests {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  border: 1px solid red;
-}
-ul {
-  list-style: square;
-}
-h2 {
+html footer h2 {
   border-bottom: 1px solid black;
+}
+html footer a {
+  padding: 0.5rem;
+  text-decoration: none;
 }
