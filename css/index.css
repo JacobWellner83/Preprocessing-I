@@ -217,7 +217,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration-color: aqua;
+  text-decoration-line: underline;
   width: 38%;
 }
 @media (max-width: 500px) {
@@ -230,7 +230,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration-style: dotted;
+  color: darkmagenta;
   width: 38%;
 }
 @media (max-width: 500px) {
@@ -239,11 +239,18 @@ h2 {
   }
 }
 .education {
+  color: darkmagenta;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration-line: underline;
   width: 38%;
+}
+@media (max-width: 500px) {
+  .education {
+    width: 47%;
+  }
 }
 @media (max-width: 500px) {
   .education {
@@ -255,7 +262,9 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration-line: underline;
   width: 38%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 @media (max-width: 500px) {
   .interests {
