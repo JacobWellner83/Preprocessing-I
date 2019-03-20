@@ -50,10 +50,91 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font: 16pt;
 }
 
-html, body {
-    height: 100%;
+html {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	line-height: 1.2rem;
+	m
+	body {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		height: 80%;
+		line-height: inherit;	
+		li {
+			list-style-position: inside;
+		}
+	}
+}
+header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin-top: 2%;
+	border: 1px darkgrey;
+	background-color: lightgray;
+	img {
+		width: 30%;
+		height: auto;
+		margin: 1rem;
+	}
+	h1 {
+		
+		margin-bottom: 1.2rem;
+	}
+	p {
+		font: inherit;
+		font-size: 1rem; 
+	}
 }
 
+h1 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 28pt;
+}
+.employment {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	border: 1px solid red;
+}
+.skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	border: 1px solid red;
+}
+.education {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	border: 1px solid red;
+}
+.interests {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	border: 1px solid red;
+}
+ul {
+	list-style: square;
+}
+h2 {border-bottom: 1px solid black;
+}
