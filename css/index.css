@@ -140,58 +140,6 @@ html {
   line-height: 1.2rem;
   background-color: #2d5dc4;
 }
-html body {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: baseline;
-  align-items: baseline;
-  width: 80%;
-  line-height: 1.5rem;
-}
-html body div {
-  margin: 1%;
-  border: 1px solid darkgrey;
-  background-color: lightgrey;
-  padding: 0.25rem;
-}
-html body ul {
-  list-style: square;
-}
-html body li {
-  list-style-position: inside;
-}
-html body h2 {
-  border-bottom: 1px solid black;
-}
-html body .employment {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 38%;
-}
-html body .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 38%;
-}
-html body .education {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 38%;
-}
-html body .interests {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 38%;
-}
 html header {
   display: flex;
   flex-direction: column;
@@ -201,26 +149,118 @@ html header {
   width: 80%;
   margin-top: 2%;
   border: 1px darkgrey;
-  background-color: lightgray;
+  background-color: lightgrey;
 }
-html header img {
+@media (max-width: 500px) {
+  html header {
+    width: 95%;
+  }
+}
+html img {
   width: 30%;
   height: auto;
   margin: 1rem;
 }
-html header h1 {
+html h1 {
   margin-bottom: 1.2rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 28pt;
 }
-html header p {
+@media (max-width: 500px) {
+  html h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 700px) {
+  html h1 {
+    font-size: 24px;
+  }
+}
+html p {
   font: inherit;
   font-size: 1rem;
 }
-html header div {
+html div {
   border: none;
 }
-html footer {
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  align-items: baseline;
+  width: 80%;
+  line-height: 1.5rem;
+}
+@media (max-width: 500px) {
+  body {
+    width: 95%;
+  }
+}
+div {
+  margin: 1%;
+  border: 1px darkgrey;
+  background-color: lightgrey;
+  padding: 0.25rem;
+}
+ul {
+  list-style: square;
+}
+li {
+  list-style-position: inside;
+}
+h2 {
+  border-bottom: 1px solid black;
+}
+.employment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+}
+@media (max-width: 500px) {
+  .employment {
+    width: 47%;
+  }
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+}
+@media (max-width: 500px) {
+  .skills {
+    width: 47%;
+  }
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+}
+@media (max-width: 500px) {
+  .education {
+    width: 47%;
+  }
+}
+.interests {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38%;
+}
+@media (max-width: 500px) {
+  .interests {
+    width: 47%;
+  }
+}
+footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -228,10 +268,10 @@ html footer {
   margin-top: 2rem;
   text-align: center;
 }
-html footer h2 {
+footer h2 {
   border-bottom: 1px solid black;
 }
-html footer a {
+footer a:link {
   padding: 0.5rem;
   text-decoration: none;
 }
