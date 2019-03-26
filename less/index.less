@@ -50,10 +50,131 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font: 16pt;
 }
 
-html, body {
-    height: 100%;
-}
+html {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	height: 100%;
+	line-height: 1.2rem;
+	background-color: @variable-htmlbackground;
+	header {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		margin-top: 2%;
+		border: 1px @variable-border;
+		background-color: @variable-backgrounds;
+		@media (max-width: 500px) {
+			width: 95%;
+		}
+		}
+		img {
+			width: 30%;
+			height: auto;
+			margin: 1rem;
+		}
+		h1 {
+			margin-bottom: 1.2rem;
+			font-family: @variable-fonty;
+			font-size: 28pt;
+			@media (max-width: 500px) {
+				font-size: 22px;
+			}
+			@media (max-width: 700px) {
+				font-size: 24px;
+			}
+		}
+		p {
+			font: inherit;
+			font-size: 1rem; 
+		}
+		div {
+			border: none;
+		}
+	}
+	body {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: baseline;
+		align-items: baseline;
+		width: 80%;
+		line-height: 1.5rem;
+		@media (max-width: 500px) {
+			width: 95%;
+		}
+		}	
+		div {
+			margin: 1%;
+			border: 1px @variable-border;
+			background-color: @variable-backgrounds;
+			padding: .25rem;
+		}
+		ul {
+			list-style: square;
+		}
+		li {
+			list-style-position: inside;
+		}
+		h2 {border-bottom: 1px solid @variable-bottomborder;
+		}		
+		.employment {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-decoration-line: underline;
+			width: 38%;
+			@media (max-width: 500px) {
+				width: 47%;
+			}
+		}
+		.skills {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: darkmagenta;
+			width: 38%;
+			@media (max-width: 500px) {
+				width: 47%;
+			}
+		}
+		.education {
+			.skills;
+			.employment;
+		}
+		.interests {
+			.employment;
+			font-family: @variable-fonty;
+		}
+	
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin-right: 20%;
+		margin-top: 2rem;
+		text-align: center;
+		h2 {
+			border-bottom: 1px solid @variable-bottomborder;
+		}
+		a:link {
+			padding: .5rem;
+			text-decoration: none;
+		}
+	}
 
+@variable-backgrounds: lightgrey;
+@variable-border: darkgrey;
+@variable-bottomborder: black;
+@variable-htmlbackground: rgb(45, 93, 196);
+@variable-fonty: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

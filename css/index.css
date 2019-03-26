@@ -1,1 +1,288 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  font: 16pt;
+}
+html {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100%;
+  line-height: 1.2rem;
+  background-color: #2d5dc4;
+}
+html header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 2%;
+  border: 1px darkgrey;
+  background-color: lightgrey;
+}
+@media (max-width: 500px) {
+  html header {
+    width: 95%;
+  }
+}
+html img {
+  width: 30%;
+  height: auto;
+  margin: 1rem;
+}
+html h1 {
+  margin-bottom: 1.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 28pt;
+}
+@media (max-width: 500px) {
+  html h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 700px) {
+  html h1 {
+    font-size: 24px;
+  }
+}
+html p {
+  font: inherit;
+  font-size: 1rem;
+}
+html div {
+  border: none;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  align-items: baseline;
+  width: 80%;
+  line-height: 1.5rem;
+}
+@media (max-width: 500px) {
+  body {
+    width: 95%;
+  }
+}
+div {
+  margin: 1%;
+  border: 1px darkgrey;
+  background-color: lightgrey;
+  padding: 0.25rem;
+}
+ul {
+  list-style: square;
+}
+li {
+  list-style-position: inside;
+}
+h2 {
+  border-bottom: 1px solid black;
+}
+.employment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration-line: underline;
+  width: 38%;
+}
+@media (max-width: 500px) {
+  .employment {
+    width: 47%;
+  }
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: darkmagenta;
+  width: 38%;
+}
+@media (max-width: 500px) {
+  .skills {
+    width: 47%;
+  }
+}
+.education {
+  color: darkmagenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration-line: underline;
+  width: 38%;
+}
+@media (max-width: 500px) {
+  .education {
+    width: 47%;
+  }
+}
+@media (max-width: 500px) {
+  .education {
+    width: 47%;
+  }
+}
+.interests {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration-line: underline;
+  width: 38%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media (max-width: 500px) {
+  .interests {
+    width: 47%;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 20%;
+  margin-top: 2rem;
+  text-align: center;
+}
+footer h2 {
+  border-bottom: 1px solid black;
+}
+footer a:link {
+  padding: 0.5rem;
+  text-decoration: none;
+}
